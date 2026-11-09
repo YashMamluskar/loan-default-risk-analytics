@@ -1,0 +1,52 @@
+Total Loans
+Total Funded Amount
+Investor Funded Amount
+Average Loan Amount
+Median Loan Amount
+Average Interest Rate
+Average Loan Term
+Loan Origination Count
+Loan Origination Amount
+Fully Paid Loans
+Charged-Off Loans
+Resolved Loans
+Unresolved Loans
+Historical Default Rate
+Mature Default Rate
+Pct Term Elapsed
+Mature Cohort Default Rate
+Resolved Funded Amount
+Charged-Off Funded Amount
+Principal-Weighted Charge-Off Rate
+Charged-Off Share of Originated
+Default Rate CI Low
+Default Rate CI High
+Default Rate vs Selection
+Rate Color
+Average Annual Income
+Median Annual Income
+Average DTI
+Average Employment Length
+Average FICO
+Total Payments Received
+Total Principal Received
+Total Interest Received
+Outstanding Principal
+Charged-Off Principal Exposure
+Total Recoveries
+Total Recovery Fees
+Net Recoveries
+Recovery Ratio
+Estimated Net Principal Loss
+Share of Exposure
+Share of Funded
+Loss Concentration Index
+Risk Segment Distribution
+Rate P25
+Rate Median
+Rate P75
+Amount P25
+Amount Median
+Amount P75
+Scope Label
+Drill Title

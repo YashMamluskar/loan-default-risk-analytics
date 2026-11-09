@@ -1,0 +1,32 @@
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Data: never publish raw or full loan-level data
+data/raw/
+data/processed/
+data/exports/
+data/.duckdb_tmp/
+*.csv.gz
+accepted_*.csv
+rejected_*.csv
+
+# Generated logs
+logs/
+
+# Power BI local caches and security files
+*.pbix.bak
+.pbi/localSettings.json
+.pbi/cache.abf
+
+# Editor and OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Power BI report with embedded loan-level data: 113 MB, above GitHub's 100 MB file limit
+*.pbix

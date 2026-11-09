@@ -1,0 +1,10 @@
+{
+  "csv_bytes": 1675133810,
+  "csv_records_excl_header": 2260701,
+  "columns": 151,
+  "distinct_id": 2260701,
+  "null_id": 0,
+  "non_numeric_id_or_null_amount_rows": 33,
+  "duplicated_ids": 0,
+  "distinct_full_row_hashes": 2260701
+}

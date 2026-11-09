@@ -1,0 +1,10 @@
+home_ownership_group,verification_status,resolved,default_rate
+MORTGAGE,Verified,215256,0.207627
+MORTGAGE,Source Verified,245059,0.178957
+MORTGAGE,Not Verified,205264,0.126583
+OWN,Verified,43204,0.243959
+OWN,Source Verified,58227,0.214969
+OWN,Not Verified,43401,0.156840
+RENT,Verified,159722,0.278766
+RENT,Source Verified,217856,0.242518
+RENT,Not Verified,156843,0.170330

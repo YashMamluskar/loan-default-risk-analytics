@@ -1,0 +1,15 @@
+check_name,failures,seconds
+row_count_loan_details,0,1.44
+row_count_borrower_profiles,0,9.91
+row_count_loan_performance,0,1.93
+orphan_performance,0,40.16
+orphan_borrower,0,23.74
+missing_issue_date_key,0,2.45
+missing_risk_segment,0,3.04
+resolved_flag_consistency,0,9.65
+unresolved_counted_as_default,0,9.54
+cash_identity,0,14.48
+principal_gt_funded,0,28.7
+fee_gt_recoveries,0,10.57
+loss_field_scope,0,8.9
+clean_field_range,0,6.89

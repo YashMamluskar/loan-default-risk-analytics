@@ -1,0 +1,44 @@
+{
+  "name": "Loan Risk Navy",
+  "dataColors": [
+    "#1F4E79",
+    "#14A098",
+    "#C9A227",
+    "#C8452F",
+    "#7A8CA5",
+    "#3E7CB1",
+    "#7FC8C2",
+    "#8C6D1F"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#14263D",
+  "tableAccent": "#1F4E79",
+  "good": "#14A098",
+  "neutral": "#C9A227",
+  "bad": "#C8452F",
+  "maximum": "#C8452F",
+  "center": "#FFFFFF",
+  "minimum": "#1F4E79",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#14263D"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 9,
+      "color": "#5B6B7F"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 18,
+      "color": "#14263D"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 11,
+      "color": "#14263D"
+    }
+  }
+}

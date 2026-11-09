@@ -1,0 +1,12 @@
+seg_rank,grade,purpose_label,unpaid_principal,cumulative_share
+1,C,Debt Consolidation,556043580.89,0.1854
+2,D,Debt Consolidation,482424412.84,0.3462
+3,E,Debt Consolidation,353616714.30,0.4641
+4,B,Debt Consolidation,260734620.66,0.5510
+5,C,Credit Card,182239104.89,0.6118
+6,F,Debt Consolidation,162188778.96,0.6658
+7,B,Credit Card,118331410.14,0.7053
+8,D,Credit Card,113180852.82,0.7430
+9,E,Credit Card,62788583.46,0.7640
+10,A,Debt Consolidation,58042069.82,0.7833
+11,C,Home Improvement,55110197.64,0.8017

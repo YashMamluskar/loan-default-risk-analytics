@@ -1,0 +1,36 @@
+file,query,purpose,rows,seconds
+04_business_analysis.sql,Q01,"How large is the portfolio, and what are its headline averages?",1,9.4
+04_business_analysis.sql,Q02,How is the portfolio distributed across loan statuses?,9,42.28
+04_business_analysis.sql,Q03,"What share of resolved loans charged off, by count and by principal? Keeps the rates separate.",1,28.07
+04_business_analysis.sql,Q04,Sensitivity: does adding the Default status and policy-exception loans change the rate?,1,10.99
+04_business_analysis.sql,Q05,Which grades have the highest historical charge-off rates?,7,86.56
+04_business_analysis.sql,Q06,"Which subgrades exceed a 40% charge-off rate, with enough resolved loans to trust?",12,28.74
+04_business_analysis.sql,Q07,"How do 36- and 60-month loans compare on rate, size and outcome?",2,27.52
+04_business_analysis.sql,Q08,Which loan purposes default most? Uses CASE to label small purposes.,14,31.92
+04_business_analysis.sql,Q09,How does charge-off vary across income bands?,7,30.06
+04_business_analysis.sql,Q10,How does debt-to-income ratio relate to loan performance?,6,35.62
+04_business_analysis.sql,Q11,"Does employment length separate risk, and how do unknown values behave?",12,32.97
+04_business_analysis.sql,Q12,How do home ownership and income verification combine?,9,32.88
+04_business_analysis.sql,Q13,"How do credit-history signals (FICO, delinquency) relate to outcomes?",20,33.6
+04_business_analysis.sql,Q14,How are interest rates set across grades and terms?,14,9.83
+04_business_analysis.sql,Q15,Do higher contract rates accompany weaker outcomes?,7,26.82
+04_business_analysis.sql,Q16,"Where did the cash go, by status? These are reported cash flows, not accounting profit.",9,41.05
+04_business_analysis.sql,Q17,How much principal was recovered from charged-off loans? Also gives the estimated net loss.,1,17.92
+04_business_analysis.sql,Q18,Which grades contribute most to charged-off principal relative to their originations?,7,22.84
+04_business_analysis.sql,Q19,Which purposes hold the largest charged-off principal?,11,15.75
+04_business_analysis.sql,Q20,How do origination volumes and mature outcomes vary by year?,12,25.58
+04_business_analysis.sql,Q21,"Which states carry the most exposure, and how do their rates compare? Descriptive only.",51,22.81
+04_business_analysis.sql,Q22,Which calendar months had no originations? LEFT JOIN keeps months without loans.,17,3.94
+05_advanced_analysis.sql,Q23,How does each subgrade rank overall and within its grade? RANK and DENSE_RANK.,35,21.19
+05_advanced_analysis.sql,Q24,How did funded originations accumulate? Running total by month.,139,20.64
+05_advanced_analysis.sql,Q25,Year-over-year change in originations. 2018 versus 2017 compares full calendar years.,12,17.38
+05_advanced_analysis.sql,Q26,Year-over-year change in mature 36-month cohorts. Only years with all terms elapsed compare fairly.,9,20.61
+05_advanced_analysis.sql,Q27,How biased is the resolved-only rate for recent years compared with term-elapsed loans?,21,27.65
+05_advanced_analysis.sql,Q28,Which grade-purpose segments make up 80% of charged-off principal? Pareto with a window total.,11,14.73
+05_advanced_analysis.sql,Q29,"How has grade mix shifted? Share of each year's loans, with a partitioned window.",84,5.9
+05_advanced_analysis.sql,Q30,"Which states exceed the portfolio rate? Scalar subquery for the benchmark, minimum sample applied.",23,28.61
+05_advanced_analysis.sql,Q31,Which grade-term segments take more loss share than funding share? Concentration index.,14,21.5
+05_advanced_analysis.sql,Q32,How do the retrospective risk tiers perform? LEFT JOIN keeps a tier even if it were empty.,3,20.65
+05_advanced_analysis.sql,Q33,Does default rise evenly across DTI deciles? NTILE on resolved loans with valid DTI.,10,31.84
+05_advanced_analysis.sql,Q34,How much do debt-settled loans recover compared with others?,2,2.93
+05_advanced_analysis.sql,Q35,What are the worst grade and DTI combinations with a meaningful sample?,10,59.69

@@ -1,0 +1,38 @@
+rule,measured,passed,severity
+"Staging rows == 2,260,701 documented source records",2260701.0,True,error
+Clean rows == raw rows - 33 footers,2260668.0,True,error
+Loan id unique,2260668.0,True,error
+Loan id never null,0.0,True,error
+"No value lost in type conversion (non-null counts equal, all columns)",0.0,True,error
+SUM(loan_amnt) unchanged by cleaning,34016115925.0,True,error
+SUM(funded_amnt) unchanged by cleaning,34004208600.0,True,error
+SUM(total_pymnt) unchanged by cleaning,27314649582.62,True,error
+SUM(total_rec_prncp) unchanged by cleaning,21489393643.58,True,error
+SUM(recoveries) unchanged by cleaning,325262956.86,True,error
+loan_status distribution unchanged,9.0,True,error
+Resolved == Fully Paid + Charged Off,1345310.0,True,error
+Primary default rate is Charged Off / Resolved,0.199626,True,error
+Current loans never counted as charged off,0.0,True,error
+Late loans never counted as resolved,0.0,True,error
+"Funded amount within $500-$40,000",0.0,True,error
+Investor funding never exceeds funded amount,0.0,True,error
+Principal received never exceeds funded amount,0.0,True,error
+Cash identity: principal+interest+late fees+recoveries == total payments,0.0,True,error
+Recovery fees never exceed recoveries,0.0,True,error
+Recoveries only on charged-off/policy charged-off loans,0.0,True,error
+Fully Paid has no outstanding principal,0.0,True,error
+Charged Off has no outstanding principal,0.0,True,error
+Issue date within 2007-2018,0.0,True,error
+Credit line opened on or before issue,0.0,True,error
+Interest rate within 0-40%,0.0,True,error
+dti_clean within 0-999,0.0,True,error
+annual_inc_clean is positive,0.0,True,error
+term_months is 36 or 60,0.0,True,error
+Grade A-G,0.0,True,error
+Subgrade starts with grade,0.0,True,error
+Fully Paid with principal shortfall above $1,4.0,True,info
+Fully Paid flagged as debt settlement,5.0,True,info
+Charged Off with zero recoveries,83875.0,True,info
+Charged Off where net recoveries exceed unpaid principal,86.0,True,info
+Loan amount differs from funded amount,2065.0,True,info
+Zero total payments,949.0,True,info

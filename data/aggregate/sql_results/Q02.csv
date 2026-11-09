@@ -1,0 +1,10 @@
+status_clean,status_group,loans,pct_of_loans,funded,outstanding_principal
+Fully Paid,Resolved,1076751,47.630,15210022825.00,0.00
+Current,Unresolved,878317,38.852,14002818250.00,9125761309.86
+Charged Off,Resolved,268559,11.880,4177988425.00,0.00
+Late (31-120 days),Unresolved,21467,0.950,363792975.00,244246366.34
+In Grace Period,Unresolved,8436,0.373,149085700.00,92044361.52
+Late (16-30 days),Unresolved,4349,0.192,75633975.00,47949885.63
+Policy Exception - Fully Paid,Policy Exception,1988,0.088,17254600.00,0.00
+Policy Exception - Charged Off,Policy Exception,761,0.034,7037825.00,0.00
+Default,Default Status,40,0.002,574025.00,382933.09

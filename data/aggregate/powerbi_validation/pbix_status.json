@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {"check": "Template opens in Power BI Desktop 2.148 and data loads", "passed": true, "detail": "Full refresh of all 2,260,668 loans in about 60 seconds"},
+    {"check": "PBIX saved by Power BI Desktop and reopened from disk", "passed": true, "detail": "113 MB; DAX validation was rerun against the reopened file"},
+    {"check": "Six visible pages plus hidden drill-through and tooltip pages render", "passed": true, "detail": "Checked by screenshot"},
+    {"check": "Cross-filtering: clicking grade G updates KPIs", "passed": true, "detail": "Default rate 49.93%, 12.17K loans, matching Python"},
+    {"check": "Button navigation between pages", "passed": true, "detail": "Ctrl+click in Desktop; Loan Performance opened"},
+    {"check": "Drill-through: grade G opens filtered Grade Detail page", "passed": true, "detail": "Filter shows grade is G; default rate 49.93%"},
+    {"check": "Report-page tooltip on hover", "passed": true, "detail": "Grade G shows 95% CI 48.91%-50.96% on 9,132 resolved loans"},
+    {"check": "Slicer dropdown selection, sync across pages, Clear all slicers button", "passed": null, "detail": "Not clicked: Windows refused window focus during the test. Slicer fields are covered by DAX filter checks"},
+    {"check": "Published to Power BI Service", "passed": null, "detail": "Out of scope: development is local only"}
+  ],
+  "limits": [
+    "Slicer dropdown clicks, slicer sync across pages and the Clear all slicers button were not exercised through the interface. Please check them once by hand.",
+    "The insight panels are static text generated from the data at build time. They do not respond to filters, and the page says so.",
+    "No bookmarks are used. Navigation buttons and Clear all slicers cover their purpose.",
+    "MySQL was verified on a separate local test instance on port 3307, not on the installed MySQL80 service, whose password was not shared.",
+    "Tests ran on one machine with Power BI Desktop 2.148. Other versions were not tested.",
+    "The PBIX and template hold this machine's data folder as the DataFolder parameter; change it under Transform data on another computer."
+  ]
+}

@@ -1,0 +1,33 @@
+area,check,result,detail
+Pipeline,Clean rows = raw rows - 33 non-loan rows,Pass,"2,260,701 to 2,260,668"
+Pipeline,Analytical file keeps every loan,Pass,
+Pipeline,Data validation rules,Pass,"31 rules, 0 failed"
+Exports,Power BI fact has every loan,Pass,
+Exports,Power BI fact ids are unique,Pass,
+Exports,MySQL loan_details.csv row count,Pass,"2,260,668"
+Exports,MySQL borrower_profiles.csv row count,Pass,"2,260,668"
+Exports,MySQL loan_performance.csv row count,Pass,"2,260,668"
+Privacy,No free text or personal fields in the Power BI fact,Pass,
+MySQL,Data-quality checks,Pass,14 checks
+MySQL,Business queries executed (at least 25 required),Pass,"35 queries, slowest 87s"
+MySQL,Every written query was executed,Pass,35 written
+KPI,Python vs MySQL on 16 KPIs,Pass,largest dollar gap $0.00
+KPI,Python vs Power BI on 16 KPIs,Pass,largest dollar gap $10.40
+Power BI,Grade default rates match Python,Pass,
+Power BI,Grade mature rates match Python,Pass,
+Power BI,Filtered measure: state CA,Pass,19.6104%
+Power BI,Filtered measure: Small Business,Pass,29.7094%
+Power BI,Filtered measure: DTI 40+,Pass,30.5853%
+Power BI,Filtered measure: High tier loans,Pass,"744,226"
+Power BI,"Rate is blank on Current loans, never zero or a false default",Pass,
+Power BI,Mature cohort measure blanks immature cohorts,Pass,8 immature cohorts
+Power BI,All measures evaluate without error,Pass,52 measures
+Power BI,Template opens in Power BI Desktop 2.148 and data loads,Pass,"Full refresh of all 2,260,668 loans in about 60 seconds"
+Power BI,PBIX saved by Power BI Desktop and reopened from disk,Pass,113 MB; DAX validation was rerun against the reopened file
+Power BI,Six visible pages plus hidden drill-through and tooltip pages render,Pass,Checked by screenshot
+Power BI,Cross-filtering: clicking grade G updates KPIs,Pass,"Default rate 49.93%, 12.17K loans, matching Python"
+Power BI,Button navigation between pages,Pass,Ctrl+click in Desktop; Loan Performance opened
+Power BI,Drill-through: grade G opens filtered Grade Detail page,Pass,Filter shows grade is G; default rate 49.93%
+Power BI,Report-page tooltip on hover,Pass,"Grade G shows 95% CI 48.91%-50.96% on 9,132 resolved loans"
+Power BI,"Slicer dropdown selection, sync across pages, Clear all slicers button",NOT RUN,Not clicked: Windows refused window focus during the test. Slicer fields are covered by DAX filter checks
+Power BI,Published to Power BI Service,NOT RUN,Out of scope: development is local only

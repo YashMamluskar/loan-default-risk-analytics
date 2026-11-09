@@ -1,0 +1,23 @@
+{
+  "rows_out": 2260668,
+  "distinct_ids": 2260668,
+  "max_last_pymnt": "2019-03-01",
+  "dti_placeholder": 137,
+  "dti_missing": 1711,
+  "dti_gt100": 2426,
+  "income_zero": 1667,
+  "income_gt1m": 583,
+  "util_100_150": 7315,
+  "util_gt150": 28,
+  "util_missing": 1802,
+  "negative_late_fee": 8,
+  "min_late_fee": -9.499999999999999e-09,
+  "il999": 2,
+  "rev999": 1,
+  "home_other": 1232,
+  "emp_missing": 146907,
+  "inv_zero": 233,
+  "unmapped_status": 0,
+  "raw_rows": 2260701,
+  "footer_rows": 33
+}
